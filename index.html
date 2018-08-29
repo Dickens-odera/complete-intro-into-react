@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Spot The Tube</title>
+</head>
+<body>
+  <div id="app"></div>
+  <script src="node_modules/react/dist/react.js"></script>
+  <script src="node_modules/react-dom/dist/react-dom.js"></script>
+  <script>
+    const MyTitle = function () {
+      return React.createElement('div', null,
+        React.createElement('h1', null, "My second component")
+      )
+    }
+    const MyFirstComponent = function () {
+      return React.createElement('div', null,
+        React.createElement(MyTitle),
+        React.createElement(MyTitle),
+        React.createElement(MyTitle),
+        React.createElement(MyTitle)
+      )
+    }
+    ReactDOM.render(
+      React.createElement(MyFirstComponent),
+      document.getElementById('app')
+    )
+  </script>
+</body>
+
+</html>
