@@ -4,7 +4,8 @@
     "build": "webpack",
     "watch": "webpack --watch",
     "format": "prettier --write --single-quote --print-width=120 --parser=flow --tab-width=2 \"js/*.{js,jsx}\"",
-    "lint": "eslint '**/*.{js,jsx}' --quiet"
+    "lint": "eslint '**/*.{js,jsx}' --quiet",
+    "dev": "webpack-dev-server"
   },
   "dependencies": {
     "axios": "0.16.1",
