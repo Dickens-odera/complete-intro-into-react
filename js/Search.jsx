@@ -1,5 +1,10 @@
 import React from 'react';
+import preload from '../data.json';
 
-const Search = () => <h1>Hi lol this is search</h1>;
+const Search = () => (
+  <div className="search">
+    {preload.shows.map (show => <h3>{show.title}</h3>)}
+  </div>
+);
 
 export default Search;

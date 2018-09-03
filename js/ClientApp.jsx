@@ -5,7 +5,6 @@ import Landing from './Landing';
 import Search from './Search';
 
 const FourOhFour = () => <h1>4o4</h1>;
-
 const App = () => (
   <BrowserRouter>
     <div className="app">
