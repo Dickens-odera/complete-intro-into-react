@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 const Landing = () => (
   <div className="landing">
-    <h1>Spot The Tube</h1>
+    <h1>Spot The Movie</h1>
     <input type="text" placeholder="Search" />
     <Link to="/search">Browse All</Link>
   </div>
